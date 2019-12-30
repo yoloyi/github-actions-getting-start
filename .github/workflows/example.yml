@@ -1,0 +1,15 @@
+name: First example
+on:
+  push:
+    branches:
+      - master
+jobs:
+  hello-actions:
+    runs-on: ubuntu-18.04
+    name: hello-actions
+    steps:
+      - name: Checkout Master
+        uses: actions/checkout@v1
+      - name: Cat text
+        run: |
+          cat text
